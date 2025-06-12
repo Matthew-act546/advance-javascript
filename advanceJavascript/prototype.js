@@ -29,7 +29,7 @@ function Friend(first, last) {
 Friend.prototype = Object.create(Person.prototype)
 
 Friend.prototype.goodFriend = function () {
-  console.log(`${this.first} is a good friend!`);
+  console.log(`${this.first} is a very good ${this.isFriend} friend!`);
 }
 const dave = new Friend("Dave", "Orbiada");
 
