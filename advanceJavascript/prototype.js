@@ -35,4 +35,5 @@ const dave = new Friend("Dave", "Orbiada");
 
 
 dave.goodFriend();
+Friend.prototype.constructor = Friend
 console.log(dave.getFullName());
