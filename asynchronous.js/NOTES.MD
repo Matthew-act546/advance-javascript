@@ -8,5 +8,5 @@
 5. Promises 
 6. Promises (Async/Await) 
 
-### Answer:
-1. im placeholder meow!
+### My Answer/ my :
+1. Synchronous programming is programming that follows a step-by-step process in the exact order it's written. For example, let's say you have three tasks: task 1, task 2, and task 3. Each task follows a sequential order or step-by-step, like 1, 2, 3. In simple terms, synchronous programming must be in order when running time and cannot go to task 3 if it has not finished task 2. This is like a chronological sequence.
