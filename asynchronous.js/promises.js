@@ -9,13 +9,10 @@ const promise1 = new Promise((resolve, reject) => {
     reject("Something went wrong sadly...")
   }
 })
-
-console.log(promise1);
-
 const promise2 = new Promise((resolve, reject) => {
   const randomNum = Math.floor(Math.random() * 10);
   setTimeout(() => {
-    if(randomNum > 7) {
+    if(randomNum < 6) {
       resolve("Ok");
     } else {
       reject("not ok");
@@ -23,4 +20,11 @@ const promise2 = new Promise((resolve, reject) => {
   }, 2000)
 })
 
-console.log(promise2);
+promise2
+  .then((result) => {
+    console.log(result) 
+    return promise1
+  }).then((result) => {
+    console.log(result);
+  }).catch(error => console.log(error));
+
